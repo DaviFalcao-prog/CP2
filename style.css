@@ -10,3 +10,35 @@ header{
     background-position: center;
     height: 220px;
 }
+nav ul{
+    display: flex;
+    justify-content: space-between; /* distribui: um à esquerda, um ao centro, um à direita */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+nav li{
+    margin: 0px 10px;
+    text-align: center;
+    background-color: white;
+}
+nav a{
+    background-color: #a5be9f; 
+    color: black; 
+    text-decoration: none;
+    padding: 4px 12px;
+    border-radius: 4px;
+    display: inline-block;
+}
+#inicio{
+    text-align: left;
+}
+#sobrenos{
+    text-align: center;
+}
+#contato{
+    text-align: right;
+}
+#produtos{
+    text-align: center;
+}
