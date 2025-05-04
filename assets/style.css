@@ -3,12 +3,20 @@
     padding: 0;
 }
  
-#cabecalho{
+#cabecalho-principal{
     background-image: url('img/1.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     height: 220px;
+}
+#cabecalho-produtos{
+    background-image: url('img/NotSoBasic.png');
+    background-color: #efefef;
+    background-size: auto;
+    background-repeat: round;
+    background-position: center;
+    height: 116px;
 }
 nav ul{
     display: flex;
@@ -37,7 +45,6 @@ nav a:hover{
     transition: 0.2s;
     border-radius: 4px;
     padding: 5px 13px;
-    border-radius: 4px;
 }
 #inicio{
     text-align: left;
@@ -57,4 +64,30 @@ nav a:hover{
     font-size: 15px;
     color: black;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.produtos{
+    text-align: center;
+    margin-top: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.produtos h1{
+    font-size: 40px;
+    color: #92A68D;
+}
+.produtos h2{
+    font-size: 20px;
+    color: #7C8C77;
+}
+.produtos-lista{
+    background-color: #92a68d63;
+    text-align: justify;
+    margin: auto;
+    width: 50%;
+    margin-top: 50px;
+    border-radius: 10px;
+    padding: 5px 13px;
+
+}
+.produtos-lista #titulo{
+    text-align: center;
 }
