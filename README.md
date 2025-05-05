@@ -1,4 +1,5 @@
 Repositório referente à CP2 de Front-End
+
 Para esse trabalho, consultamos o clinte e procuramos saber o que ele gostaria em um site.
 O cliente nos pediu uma maneira de aumentar a visibilidade de sua marca com um site, pediu para que nós pudessemos criar uma ferramenta que desse uma prévia do que a marca vende e a história da marca, e, além disso, pediu que o cliente pudesse entrar em contato com os atendentes para tirar suas dúvidas acerca dos produtos. Também pediu para que contasse um pouco do que era a marca, e como a mesma seria a escolha certa para as necessidades do cliente final.
 
