@@ -151,6 +151,8 @@ nav a:hover{
     text-align: justify;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #1c251b;
+    margin-top: 20px;
+    margin: 10px;
 }
 
 .plus-size{
@@ -166,11 +168,6 @@ nav a:hover{
     flex-direction: column; /* Garante que o conteúdo fique em coluna */
     align-items: center; /* Centraliza verticalmente */
 
-}
-.plus-size p{
-    margin-top: 20px;
-    margin-left: 10px;
-    margin-right: 10px;
 }
 
 .calcas{
