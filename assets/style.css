@@ -2,35 +2,85 @@
     margin: 0;
     padding: 0;
 }
- 
-#cabecalho-principal{
+
+
+header{
+    background-color: #96af92;
+    height: 220px;
+    border-bottom: 20px solid #4F594C;
+}
+
+/* #cabecalho-principal{
     background-image: url('img/1.png');
+    background-color: #96af92;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 220px;
 }
 #cabecalho-produtos{
     background-image: url('img/NotSoBasic.png');
-    background-color: #efefef;
-    background-size: auto;
-    background-repeat: round;
     background-position: center;
-    height: 116px;
+} */
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Faz o body ocupar toda a altura da viewport */
+    margin: 0;
 }
+
+
+main{
+    background-color: white;
+    height: auto;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    flex: 1;    .apresentacao img {
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+}
+
+footer{
+    background-color: #4F594C;
+    height: 350px;
+    text-align: center;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-top: 10px;
+    gap: 20px;
+
+    display: flex; /* Flexbox ativado */
+    justify-content: center; /* Centraliza horizontalmente */
+    flex-direction: column; /* Garante que o conteúdo fique em coluna */
+    align-items: center; /* Centraliza verticalmente */
+}
+footer a{
+    color: white;
+    text-decoration: none;
+}
+
+
 nav ul{
     display: flex;
-    justify-content: space-between; /* distribui: um à esquerda, um ao centro, um à direita */
+    justify-content: right;
     list-style: none;
     padding: 0;
     margin: 0;
-    background-color: #4F594C;
-    height: 50px;
+    height: 220px;
+    font-size: 18px;
+}
+nav ul img {
+    display: block; /* Remove o comportamento inline */
+    margin-right: auto; /* Empurra a imagem para o lado esquerdo */
+    margin-left: 0; /* Garante que não haja margem à esquerda */
 }
 nav li{
+    display: flex;
+    align-items: center;
     margin: 0px 10px;
     text-align: center;
-    /* background-color: white; */
 }
 nav a{
     margin-top: 12px;
@@ -46,48 +96,192 @@ nav a:hover{
     border-radius: 4px;
     padding: 5px 13px;
 }
-#inicio{
-    text-align: left;
-}
-#sobrenos{
-    text-align: center;
-}
-#contato{
-    text-align: right;
-}
-#produtos{
-    text-align: center;
-}
-#Boas-Vindas{
-    text-align: center;
-    margin-top: 20px;
-    font-size: 15px;
-    color: black;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-.produtos{
+
+
+.titulos{
     text-align: center;
     margin-top: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.produtos h1{
+.titulos h1{
     font-size: 40px;
     color: #92A68D;
 }
-.produtos h2{
+.titulos h2{
     font-size: 20px;
     color: #7C8C77;
 }
-.produtos-lista{
+
+
+.apresentacao{
     background-color: #92a68d63;
+    color: #4F594C;
+    text-align: center;
+    margin: 50px auto;
+    padding: 20px;
+    width: 50%;
+    height: auto;
+    border-radius: 10px;    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.apresentacao img{
+    margin-top: 20px;
+    max-width: 90%;
+    height: auto;
+    object-fit: cover;
+}
+
+
+.produtos-lista{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    
+    display: flex; /* Flexbox ativado */
+    justify-content: center; /* Centraliza horizontalmente */
+    flex-direction: column; /* Garante que o conteúdo fique em coluna */
+    align-items: center; /* Centraliza verticalmente */
+    
+}
+.produtos-lista h3{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #4F594C;
+}
+.produtos-lista p{
     text-align: justify;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #1c251b;
+}
+
+.plus-size{
+    background-color: #92a68d63;
     margin: auto;
     width: 50%;
-    margin-top: 50px;
-    border-radius: 10px;
-    padding: 5px 13px;
+    height: 300px;
+    border-radius: 10px;    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    display: flex; /* Flexbox ativado */
+    justify-content: center; /* Centraliza horizontalmente */
+    flex-direction: column; /* Garante que o conteúdo fique em coluna */
+    align-items: center; /* Centraliza verticalmente */
 
 }
-.produtos-lista #titulo{
+.plus-size p{
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.calcas{
+    background-color: #92a68d63;
+    text-align: justify;
+    margin-top: 50px;
+    width: 50%;
+    height: 300px;
+    border-radius: 10px;    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    display: flex; /* Flexbox ativado */
+    justify-content: center; /* Centraliza horizontalmente */
+    flex-direction: column; /* Garante que o conteúdo fique em coluna */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+.jaquetas{
+    background-color: #92a68d63;
+    text-align: justify;
+    margin-top: 50px;
+    width: 50%;
+    height: 300px;
+    border-radius: 10px;    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    display: flex; /* Flexbox ativado */
+    justify-content: center; /* Centraliza horizontalmente */
+    flex-direction: column; /* Garante que o conteúdo fique em coluna */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+.coletes{
+    background-color: #92a68d63;
+    text-align: justify;
+    margin-top: 50px;
+    width: 50%;
+    height: 300px;
+    border-radius: 10px;    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    display: flex; /* Flexbox ativado */
+    justify-content: center; /* Centraliza horizontalmente */
+    flex-direction: column; /* Garante que o conteúdo fique em coluna */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+.shorts{
+    background-color: #92a68d63;
+    text-align: justify;
+    margin-top: 50px;
+    width: 50%;
+    height: 300px;
+    border-radius: 10px;    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    display: flex; /* Flexbox ativado */
+    justify-content: center; /* Centraliza horizontalmente */
+    flex-direction: column; /* Garante que o conteúdo fique em coluna */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+.shorts-saia{
+    background-color: #92a68d63;
+    text-align: justify;
+    margin-top: 50px;
+    width: 50%;
+    height: 300px;
+    border-radius: 10px;    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    display: flex; /* Flexbox ativado */
+    justify-content: center; /* Centraliza horizontalmente */
+    flex-direction: column; /* Garante que o conteúdo fique em coluna */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+.saias{
+    background-color: #92a68d63;
+    text-align: justify;
+    margin-top: 50px;
+    width: 50%;
+    height: 300px;
+    border-radius: 10px;    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    display: flex; /* Flexbox ativado */
+    justify-content: center; /* Centraliza horizontalmente */
+    flex-direction: column; /* Garante que o conteúdo fique em coluna */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+#Conversar{
+    width: 60px;
+    height: 30px;
+    background-color: #0C545F;
+    padding: 10px 30px;
+    border-radius: 5px;
+    margin-top: 20px;
+    color: white;
+    text-decoration: none;
     text-align: center;
+    transition: 0.2s;
+    display: flex; /* Flexbox ativado */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+}
+#Conversar:hover{
+    background-color: #0C545F;
+    transition: 0.2s;
+    border-radius: 10px;
+    padding: 10px 30px;
+    scale: 1.05;
 }
