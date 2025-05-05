@@ -111,6 +111,12 @@ nav a:hover{
     font-size: 20px;
     color: #7C8C77;
 }
+.titulos p{
+    font-size: 18px;
+    max-width: 800px;          
+    margin: 0 auto;            
+    padding: 40px 20px;        
+}
 
 
 .apresentacao{
@@ -183,6 +189,27 @@ nav a:hover{
     justify-content: center; /* Centraliza horizontalmente */
     flex-direction: column; /* Garante que o conteúdo fique em coluna */
     align-items: center; /* Centraliza verticalmente */
+}
+.cards{
+    position: relative;         /* permite posicionar filhos absolutamente */
+    background-color: #d7dfd8;
+    border-radius: 16px;
+    padding: 60px 20px 40px;    /* espaço suficiente pro conteúdo e a imagem */
+    text-align: center;
+    max-width: 400px;
+    margin: 40px auto;
+}
+.imagem-roupa{
+    position: absolute;
+    top: -30px;                 
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 150px;
+    border-radius: 12px;
+    object-fit: cover;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    background-color: white; 
 }
 
 .jaquetas{
