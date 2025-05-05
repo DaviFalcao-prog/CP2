@@ -4,7 +4,7 @@
 }
 
 
-header{
+header{ /*Imagem de cabeçalho e Menu de navegação entre as páginas.*/
     background-color: #96af92;
     height: 220px;
     border-bottom: 20px solid #4F594C;
@@ -22,7 +22,7 @@ header{
     background-position: center;
 } */
 
-body {
+body { /*Transfomando o conteúdo central de todos os bodys para que fique mais ajeitado o site*/
     display: flex;
     flex-direction: column;
     min-height: 100vh; /* Faz o body ocupar toda a altura da viewport */
@@ -30,7 +30,7 @@ body {
 }
 
 
-main{
+main{ /*Descrição de cada página*/
     background-color: white;
     height: auto;
     text-align: center;
@@ -42,7 +42,7 @@ main{
     }
 }
 
-footer{
+footer{ /*Colocando informações de contato interativa no fim da página*/
     background-color: #4F594C;
     height: 350px;
     text-align: center;
@@ -56,13 +56,13 @@ footer{
     flex-direction: column; /* Garante que o conteúdo fique em coluna */
     align-items: center; /* Centraliza verticalmente */
 }
-footer a{
+footer a{ /*Alterando as cores do link.*/
     color: white;
     text-decoration: none;
 }
 
 
-nav ul{
+nav ul{/*Ajustando a lista criada.*/
     display: flex;
     justify-content: right;
     list-style: none;
@@ -98,7 +98,7 @@ nav a:hover{
 }
 
 
-.titulos{
+.titulos{/*Página sobre nós, Ajeitando os textos presentes nele.*/
     text-align: center;
     margin-top: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -190,7 +190,7 @@ nav a:hover{
     flex-direction: column; /* Garante que o conteúdo fique em coluna */
     align-items: center; /* Centraliza verticalmente */
 }
-.cards{
+.cards{ /*os cards onde estão as fotos das roupas */
     position: relative;         /* permite posicionar filhos absolutamente */
     background-color: #d7dfd8;
     border-radius: 16px;
@@ -199,7 +199,7 @@ nav a:hover{
     max-width: 400px;
     margin: 40px auto;
 }
-.imagem-roupa{
+.imagem-roupa{ /*Configurando o tamanho e posição das roupas dentro das páginas produtos*/
     position: absolute;
     top: -30px;                 
     left: 50%;
