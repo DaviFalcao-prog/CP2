@@ -315,6 +315,7 @@ nav a:hover{
     gap: 20px;
     flex-wrap: wrap;
     margin-top: 40px;
+    margin-bottom: 40px;
 }
 .imagem-contato img{
     width: 200px;
